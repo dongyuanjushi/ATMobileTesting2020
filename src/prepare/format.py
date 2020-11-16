@@ -1,41 +1,21 @@
+import os
 
-width = 800
-height = 600
-depth = 3
-def annotation(img,data):
-    xml_name = str(img).split('.',1)[0] + '.xml'
-    E = objectify.ElementMaker(annotate=False)
-    anno_tree = E.annotation(
-        E.folder('VOC2014_instance'),
-        E.filename(img),
-        E.source(
-            E.database('COCO'),
-            E.annotation('COCO'),
-            E.image('COCO'),
-            E.url(img)
-        ),
-        E.size(
-            E.width(width),
-            E.height(height),
-            E.depth(depth)
-        ),
-        E.segmented(0),
-    )
-    for i in data: #i[0], i[1][0],i[1][1],i[1][2],i[1][3]
-        E2 = objectify.ElementMaker(annotate=False)
-        anno_tree2 = E2.object(
-            E.name(i[0]),
-            E.bndbox(
-                E.xmin(i[1][0]),
-                E.ymin(i[1][1]),
-                E.xmax(i[1][2]),
-                E.ymax(i[1][3])
-            ),
-            E.difficult(0)
-        )
 
-        anno_tree.append(anno_tree2)
-    etree.ElementTree(anno_tree).write('/usr/local/xml/'+xml_name, pretty_print=True)
+def rename(img_path):
+    image_idx = 1
+    json_idx=1
+    for item in os.listdir(img_path):
+        old_file = os.path.join(img_path, item)
+        if item.endswith(".jpg"):
+            new_file = os.path.join(img_path, (str(image_idx).zfill(6) + '.jpg'))
+            image_idx+=1
+            os.rename(old_file, new_file)
+        elif item.endswith(".json"):
+            new_file = os.path.join(img_path, (str(json_idx).zfill(6) + '.json'))
+            json_idx+=1
+            os.rename(old_file, new_file)
+
 
 if __name__ == '__main__':
-    pass
+    origin_img_path = "../data"
+    rename(origin_img_path)
