@@ -25,6 +25,9 @@ def annotate_img(img_path,name,decoded_data):
         left_up = (item["bounds"][0], item["bounds"][1])
         right_down = (item["bounds"][2], item["bounds"][3])
         cv2.rectangle(img, left_up, right_down, (255, 0, 0), 4)
+        text=item["class"]
+        font=cv2.FONT_HERSHEY_SIMPLEX
+        cv2.putText(img,text,(left_up[0]-1,left_up[1]-1),font,1.2,(205,0,205),2)
     annotated_img_path=os.path.join(annotated_base_img_path,name+".jpg")
     cv2.imwrite(annotated_img_path, img)
 
