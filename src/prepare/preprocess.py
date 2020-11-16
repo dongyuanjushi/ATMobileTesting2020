@@ -5,17 +5,10 @@ import re
 
 
 def save_and_classify():
-    all_path=os.path.join(save_based_path,"all_data.json")
-    with open(all_path,"w") as w:
-        json.dump(all_decoded_data,w)
-    for item in all_decoded_data.values():
-        if item["class"] not in classified.keys():
-            classified.setdefault(item["class"], 1)
-        else:
-            classified[item["class"]] += 1
-    classified_path = os.path.join(save_based_path, "classified.json")
-    with open(classified_path, "w") as w:
-        json.dump(classified, w)
+    all_path = os.path.join(save_based_path, "all_data.json")
+    with open(all_path, "w") as w:
+        json.dump(all_decoded_data, w)
+
 
 def decode_all(base_path):
     for file_name in os.listdir(base_path):
@@ -25,7 +18,7 @@ def decode_all(base_path):
             with open(absolute_file_name, "r", encoding="utf-8") as f:
                 data = json.load(f)["activity"]["root"]
                 decode(data["children"], decoded_data)
-            all_decoded_data.update(decoded_data)
+            all_decoded_data.setdefault(file_name[:len(file_name) - len(".json")], decoded_data)
 
 
 def check_duplicate(decoded_data, current_bounds):
@@ -55,7 +48,8 @@ def decode(data, decoded_data):
                     elif combined_class is None:
                         combined_class = item["class"]
                     decoded_data.setdefault(item["ancestors"][0], {})
-                    decoded_data[item["ancestors"][0]].setdefault("bounds", item["bounds"])
+                    b_box = resize(item["bounds"])
+                    decoded_data[item["ancestors"][0]].setdefault("bounds", b_box)
                     decoded_data[item["ancestors"][0]].setdefault("class", combined_class)
             else:
                 if not is_duplicate:
@@ -65,7 +59,8 @@ def decode(data, decoded_data):
                     elif combined_class is None:
                         combined_class = item["class"]
                     decoded_data.setdefault(item["resource-id"], {})
-                    decoded_data[item["resource-id"]].setdefault("bounds", item["bounds"])
+                    b_box = resize(item["bounds"])
+                    decoded_data[item["resource-id"]].setdefault("bounds", b_box)
                     decoded_data[item["resource-id"]].setdefault("class", combined_class)
         if "children" in item.keys():
             decode(item["children"], decoded_data)
@@ -81,13 +76,29 @@ def combine_class(current_class):
     return res
 
 
+def resize(bounding_box):
+    height, width = 1920, 1080
+    ori_height, ori_width = 2560, 1440
+    for i in range(len(bounding_box)):
+        bounding_box[i] = 0 if bounding_box[i] < 0 else bounding_box[i]
+        if i % 2 == 0:
+            bounding_box[i] = round(bounding_box[i] / ori_width * width)
+        else:
+            bounding_box[i] = round(bounding_box[i] / ori_height * height)
+    return bounding_box
+
+
 def check_bounds(added_bounds, current_bounds):
     [l1, u1, r1, d1] = added_bounds
     [l2, u2, r2, d2] = current_bounds
     left_up_dis = get_distance(l1, u1, l2, u2)
     right_down_dis = get_distance(r1, d1, r2, d2)
-    res = left_up_dis <= 150 and right_down_dis <= 150
-    return res
+    closed_res = left_up_dis <= 100 and right_down_dis <= 100
+    if closed_res:
+        return True
+    if abs(l2-r2)<=15 or abs(d2-u2)<=10:
+        return True
+    return False
 
 
 def get_distance(x1, y1, x2, y2):
@@ -121,13 +132,5 @@ if __name__ == '__main__':
         r"^(.*)EditText$": "EditText",
         r"^[a-z]{1,}": "False",
     }
-    # strs=["ArabicTextView"]
-    # count=0
-    # for str in strs:
-    #     for item in match_patterns:
-    #         print(re.match(item,str))
-    #     count+=1
-    #     print(count)
-    #     print("Finised:")
     decode_all(base_path)
     save_and_classify()
