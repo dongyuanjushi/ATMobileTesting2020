@@ -43,25 +43,23 @@ def decode(data, decoded_data):
             if "resource-id" not in item.keys():
                 if not is_duplicate:
                     combined_class = combine_class(item["class"])
-                    if combined_class == "False":
-                        continue
-                    elif combined_class is None:
-                        combined_class = item["class"]
-                    decoded_data.setdefault(item["ancestors"][0], {})
-                    b_box = resize(item["bounds"])
-                    decoded_data[item["ancestors"][0]].setdefault("bounds", b_box)
-                    decoded_data[item["ancestors"][0]].setdefault("class", combined_class)
+                    if combined_class != "False":
+                        if combined_class is None:
+                            combined_class = item["class"]
+                        decoded_data.setdefault(item["ancestors"][0], {})
+                        b_box = resize(item["bounds"])
+                        decoded_data[item["ancestors"][0]].setdefault("bounds", b_box)
+                        decoded_data[item["ancestors"][0]].setdefault("class", combined_class)
             else:
                 if not is_duplicate:
                     combined_class = combine_class(item["class"])
-                    if combined_class == "False":
-                        continue
-                    elif combined_class is None:
-                        combined_class = item["class"]
-                    decoded_data.setdefault(item["resource-id"], {})
-                    b_box = resize(item["bounds"])
-                    decoded_data[item["resource-id"]].setdefault("bounds", b_box)
-                    decoded_data[item["resource-id"]].setdefault("class", combined_class)
+                    if combined_class != "False":
+                        if combined_class is None:
+                            combined_class = item["class"]
+                        decoded_data.setdefault(item["resource-id"], {})
+                        b_box = resize(item["bounds"])
+                        decoded_data[item["resource-id"]].setdefault("bounds", b_box)
+                        decoded_data[item["resource-id"]].setdefault("class", combined_class)
         if "children" in item.keys():
             decode(item["children"], decoded_data)
 
@@ -91,12 +89,14 @@ def resize(bounding_box):
 def check_bounds(added_bounds, current_bounds):
     [l1, u1, r1, d1] = added_bounds
     [l2, u2, r2, d2] = current_bounds
+    if abs(l2-r2)<=15 or abs(d2-u2)<=10:
+        return True
+    if r2-l2<0 or d2-u2<0:
+        return True
     left_up_dis = get_distance(l1, u1, l2, u2)
     right_down_dis = get_distance(r1, d1, r2, d2)
     closed_res = left_up_dis <= 100 and right_down_dis <= 100
     if closed_res:
-        return True
-    if abs(l2-r2)<=15 or abs(d2-u2)<=10:
         return True
     return False
 
