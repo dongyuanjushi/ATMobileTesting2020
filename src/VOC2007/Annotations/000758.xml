@@ -67,18 +67,6 @@
     </bndbox>
   </object>
   <object>
-    <name>X.1DN</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>172</xmin>
-      <ymin>532</ymin>
-      <xmax>908</xmax>
-      <ymax>1325</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>CardView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>

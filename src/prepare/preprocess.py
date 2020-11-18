@@ -34,7 +34,7 @@ def check_duplicate(decoded_data, current_bounds):
 def decode(data, decoded_data):
     for item in data:
         nobounds = False
-        if item == None:
+        if item is None:
             continue
         elif "bounds" not in item.keys() or item.keys() == None:
             nobounds = True
@@ -89,9 +89,9 @@ def resize(bounding_box):
 def check_bounds(added_bounds, current_bounds):
     [l1, u1, r1, d1] = added_bounds
     [l2, u2, r2, d2] = current_bounds
-    if abs(l2-r2)<=15 or abs(d2-u2)<=10:
+    if abs(l2 - r2) <= 15 or abs(d2 - u2) <= 10:
         return True
-    if r2-l2<0 or d2-u2<0:
+    if r2 - l2 < 0 or d2 - u2 < 0:
         return True
     left_up_dis = get_distance(l1, u1, l2, u2)
     right_down_dis = get_distance(r1, d1, r2, d2)
@@ -125,12 +125,13 @@ if __name__ == '__main__':
         r"^(.*)RadioButton$": "RadioButton",
         r"^(.*)Spinner$": "Spinner",
         r"^(.*)Switcher$": "Switcher",
-        r"^(.*)Card$": "Card",
         r"^(.*)Indicator$": "Indicator",
         r"^(.*)Pager$": "Pager",
         r"^(.*)Picker$": "Picker",
         r"^(.*)EditText$": "EditText",
         r"^[a-z]{1,}": "False",
+        r"X\.[0-9]*": "False",
+        "DragandDrop.PagedDragDropGrid":"False"
     }
     decode_all(base_path)
     save_and_classify()

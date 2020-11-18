@@ -55,18 +55,6 @@
     </bndbox>
   </object>
   <object>
-    <name>X.1og</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>Layout</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -124,18 +112,6 @@
       <ymin>0</ymin>
       <xmax>1080</xmax>
       <ymax>1379</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>X.5sl</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>999</ymin>
-      <xmax>1080</xmax>
-      <ymax>1083</ymax>
     </bndbox>
   </object>
   <object>

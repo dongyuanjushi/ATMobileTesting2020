@@ -1,6 +1,8 @@
 import os
 import json
 from lxml import etree
+
+
 class GEN_Annotations:
     def __init__(self, filename):
         self.root = etree.Element("annotation")
@@ -9,8 +11,7 @@ class GEN_Annotations:
         child2 = etree.SubElement(self.root, "filename")
         child2.text = filename
 
-
-    def set_size(self,width,height,channel):
+    def set_size(self, width, height, channel):
         size = etree.SubElement(self.root, "size")
         widthn = etree.SubElement(size, "width")
         widthn.text = str(width)
@@ -19,16 +20,15 @@ class GEN_Annotations:
         channeln = etree.SubElement(size, "depth")
         channeln.text = str(channel)
 
-
-    def savefile(self,filename):
+    def savefile(self, filename):
         tree = etree.ElementTree(self.root)
         tree.write(filename, pretty_print=True, xml_declaration=False, encoding='utf-8')
 
-    def add_pic_attr(self,label,xmin,ymin,xmax,ymax):
+    def add_pic_attr(self, label, xmin, ymin, xmax, ymax):
         object = etree.SubElement(self.root, "object")
         namen = etree.SubElement(object, "name")
         posen = etree.SubElement(object, "pose")
-        posen.text="Unspecified"
+        posen.text = "Unspecified"
         truncated = etree.SubElement(object, "truncated")
         truncated.text = str(0)
         difficult = etree.SubElement(object, "difficult")
@@ -46,19 +46,18 @@ class GEN_Annotations:
 
 
 if __name__ == '__main__':
-   decoded_data_path="../decoded_data/all_data.json"
-   saved_xml_base_path="../VOC2007/Annotations"
-   with open(decoded_data_path, "r", encoding="utf-8") as f:
-       all_data = json.load(f)
-       for item in all_data:
-           saved_xml_path = os.path.join(saved_xml_base_path, item + ".xml")
-           filename = item+".jpg"
-           anno = GEN_Annotations(filename)
-           anno.set_size(1080, 1920, 3)
-           data = all_data[item]
-           for widget in data.values():
-               label=widget["class"]
-               [xmin,ymin,xmax,ymax]=widget["bounds"]
-               anno.add_pic_attr(label, xmin, ymin, xmax, ymax)
-           anno.savefile(saved_xml_path)
-
+    decoded_data_path = "../decoded_data/all_data.json"
+    saved_xml_base_path = "../VOC2007/Annotations"
+    with open(decoded_data_path, "r", encoding="utf-8") as f:
+        all_data = json.load(f)
+        for item in all_data:
+            saved_xml_path = os.path.join(saved_xml_base_path, item + ".xml")
+            filename = item + ".jpg"
+            anno = GEN_Annotations(filename)
+            anno.set_size(1080, 1920, 3)
+            data = all_data[item]
+            for widget in data.values():
+                label = widget["class"]
+                [xmin, ymin, xmax, ymax] = widget["bounds"]
+                anno.add_pic_attr(label, xmin, ymin, xmax, ymax)
+            anno.savefile(saved_xml_path)

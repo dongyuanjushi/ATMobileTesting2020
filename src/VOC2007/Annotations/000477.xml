@@ -31,15 +31,15 @@
     </bndbox>
   </object>
   <object>
-    <name>X.19g</name>
+    <name>View</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>63</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
+      <xmin>42</xmin>
+      <ymin>136</ymin>
+      <xmax>1038</xmax>
+      <ymax>1602</ymax>
     </bndbox>
   </object>
   <object>

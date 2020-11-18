@@ -67,7 +67,7 @@
     </bndbox>
   </object>
   <object>
-    <name>X.0xj</name>
+    <name>CardView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>

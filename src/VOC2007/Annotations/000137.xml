@@ -43,18 +43,6 @@
     </bndbox>
   </object>
   <object>
-    <name>X.19g</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>63</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>FrameLayout</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
