@@ -7,19 +7,7 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>555</xmin>
-      <ymin>74</ymin>
-      <xmax>1070</xmax>
-      <ymax>1082</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ItemView</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -28,18 +16,6 @@
       <ymin>74</ymin>
       <xmax>1070</xmax>
       <ymax>200</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>597</xmin>
-      <ymin>108</ymin>
-      <xmax>1028</xmax>
-      <ymax>165</ymax>
     </bndbox>
   </object>
   <object>

@@ -7,50 +7,14 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>LinearLayout</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
+      <xmin>5</xmin>
+      <ymin>5</ymin>
+      <xmax>1075</xmax>
       <ymax>1794</ymax>
     </bndbox>
   </object>
@@ -60,49 +24,13 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ImageView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
+      <xmin>5</xmin>
       <ymin>823</ymin>
       <xmax>148</xmax>
       <ymax>971</ymax>
     </bndbox>
   </object>
   <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>905</xmin>
-      <ymin>52</ymin>
-      <xmax>1080</xmax>
-      <ymax>1619</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>905</xmin>
-      <ymin>52</ymin>
-      <xmax>1080</xmax>
-      <ymax>1136</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -110,7 +38,7 @@
     <bndbox>
       <xmin>905</xmin>
       <ymin>52</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>227</ymax>
     </bndbox>
   </object>
@@ -122,7 +50,7 @@
     <bndbox>
       <xmin>905</xmin>
       <ymin>280</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>454</ymax>
     </bndbox>
   </object>
@@ -134,7 +62,7 @@
     <bndbox>
       <xmin>905</xmin>
       <ymin>507</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>682</ymax>
     </bndbox>
   </object>
@@ -146,7 +74,7 @@
     <bndbox>
       <xmin>905</xmin>
       <ymin>734</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>909</ymax>
     </bndbox>
   </object>
@@ -158,7 +86,7 @@
     <bndbox>
       <xmin>905</xmin>
       <ymin>961</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>1136</ymax>
     </bndbox>
   </object>
@@ -168,21 +96,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
+      <xmin>5</xmin>
       <ymin>1619</ymin>
       <xmax>175</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ImageView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>905</xmin>
-      <ymin>1619</ymin>
-      <xmax>1080</xmax>
       <ymax>1794</ymax>
     </bndbox>
   </object>
@@ -196,18 +112,6 @@
       <ymin>52</ymin>
       <xmax>262</xmax>
       <ymax>215</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ImageView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
     </bndbox>
   </object>
   <object>

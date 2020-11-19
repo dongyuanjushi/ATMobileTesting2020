@@ -7,63 +7,15 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>LinearLayout</name>
+    <name>Container</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Pager</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
+      <xmin>5</xmin>
+      <ymin>5</ymin>
+      <xmax>1075</xmax>
       <ymax>1345</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1345</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ImageView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1199</ymax>
     </bndbox>
   </object>
   <object>
@@ -76,18 +28,6 @@
       <ymin>1199</ymin>
       <xmax>1054</xmax>
       <ymax>1313</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>26</xmin>
-      <ymin>1424</ymin>
-      <xmax>1054</xmax>
-      <ymax>1784</ymax>
     </bndbox>
   </object>
   <object>
@@ -136,18 +76,6 @@
       <ymin>1574</ymin>
       <xmax>848</xmax>
       <ymax>1623</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>TextView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>848</xmin>
-      <ymin>1546</ymin>
-      <xmax>1054</xmax>
-      <ymax>1634</ymax>
     </bndbox>
   </object>
   <object>

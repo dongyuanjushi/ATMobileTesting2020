@@ -7,42 +7,6 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>380</ymin>
-      <xmax>918</xmax>
-      <ymax>1476</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>380</ymin>
-      <xmax>918</xmax>
-      <ymax>1476</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>380</ymin>
-      <xmax>918</xmax>
-      <ymax>1476</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -67,7 +31,7 @@
     </bndbox>
   </object>
   <object>
-    <name>EditText</name>
+    <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -79,7 +43,7 @@
     </bndbox>
   </object>
   <object>
-    <name>EditText</name>
+    <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -91,7 +55,7 @@
     </bndbox>
   </object>
   <object>
-    <name>EditText</name>
+    <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>

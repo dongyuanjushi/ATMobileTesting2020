@@ -7,18 +7,6 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>48</xmin>
-      <ymin>84</ymin>
-      <xmax>1032</xmax>
-      <ymax>1773</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -28,30 +16,6 @@
       <ymin>84</ymin>
       <xmax>1032</xmax>
       <ymax>252</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>48</xmin>
-      <ymin>257</ymin>
-      <xmax>1032</xmax>
-      <ymax>1773</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>48</xmin>
-      <ymin>257</ymin>
-      <xmax>1032</xmax>
-      <ymax>1773</ymax>
     </bndbox>
   </object>
   <object>
@@ -112,18 +76,6 @@
       <ymin>1620</ymin>
       <xmax>1018</xmax>
       <ymax>1746</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>48</xmin>
-      <ymin>1760</ymin>
-      <xmax>1032</xmax>
-      <ymax>1773</ymax>
     </bndbox>
   </object>
 </annotation>

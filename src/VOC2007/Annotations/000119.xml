@@ -7,42 +7,6 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>208</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>208</ymin>
-      <xmax>1080</xmax>
-      <ymax>833</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -55,7 +19,7 @@
     </bndbox>
   </object>
   <object>
-    <name>Picker</name>
+    <name>Container</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -67,19 +31,7 @@
     </bndbox>
   </object>
   <object>
-    <name>EditText</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>267</xmin>
-      <ymin>488</ymin>
-      <xmax>477</xmax>
-      <ymax>552</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Picker</name>
+    <name>Container</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -115,27 +67,27 @@
     </bndbox>
   </object>
   <object>
-    <name>View</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>63</ymin>
-      <xmax>1080</xmax>
-      <ymax>208</ymax>
+      <xmin>5</xmin>
+      <ymin>114</ymin>
+      <xmax>42</xmax>
+      <ymax>156</ymax>
     </bndbox>
   </object>
   <object>
-    <name>View</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
-      <ymin>63</ymin>
-      <xmax>146</xmax>
-      <ymax>208</ymax>
+      <xmin>32</xmin>
+      <ymin>84</ymin>
+      <xmax>135</xmax>
+      <ymax>187</ymax>
     </bndbox>
   </object>
   <object>
@@ -151,26 +103,14 @@
     </bndbox>
   </object>
   <object>
-    <name>View</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>919</xmin>
       <ymin>63</ymin>
-      <xmax>1080</xmax>
-      <ymax>208</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ItemView</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>919</xmin>
-      <ymin>63</ymin>
-      <xmax>1080</xmax>
+      <xmax>1075</xmax>
       <ymax>208</ymax>
     </bndbox>
   </object>

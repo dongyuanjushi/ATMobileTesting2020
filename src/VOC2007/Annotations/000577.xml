@@ -7,27 +7,15 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>FrameLayout</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>190</xmin>
       <ymin>566</ymin>
-      <xmax>889</xmax>
-      <ymax>1292</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>190</xmin>
-      <ymin>566</ymin>
-      <xmax>889</xmax>
-      <ymax>1292</ymax>
+      <xmax>190</xmax>
+      <ymax>566</ymax>
     </bndbox>
   </object>
   <object>
@@ -55,7 +43,7 @@
     </bndbox>
   </object>
   <object>
-    <name>CardView</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>

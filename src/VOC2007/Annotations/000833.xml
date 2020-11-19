@@ -7,49 +7,25 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>ImageButton</name>
+    <name>SpecialButton</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>4</xmin>
-      <ymin>0</ymin>
+      <ymin>5</ymin>
       <xmax>109</xmax>
       <ymax>104</ymax>
     </bndbox>
   </object>
   <object>
-    <name>ImageButton</name>
+    <name>SpecialButton</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>118</xmin>
-      <ymin>0</ymin>
+      <ymin>5</ymin>
       <xmax>223</xmax>
       <ymax>104</ymax>
     </bndbox>
@@ -61,7 +37,7 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>230</xmin>
-      <ymin>0</ymin>
+      <ymin>5</ymin>
       <xmax>959</xmax>
       <ymax>34</ymax>
     </bndbox>
@@ -79,39 +55,15 @@
     </bndbox>
   </object>
   <object>
-    <name>ImageButton</name>
+    <name>SpecialButton</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>963</xmin>
-      <ymin>0</ymin>
+      <ymin>5</ymin>
       <xmax>1076</xmax>
       <ymax>104</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>0</xmin>
-      <ymin>104</ymin>
-      <xmax>1080</xmax>
-      <ymax>1794</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>26</xmin>
-      <ymin>130</ymin>
-      <xmax>222</xmax>
-      <ymax>440</ymax>
     </bndbox>
   </object>
   <object>
@@ -120,9 +72,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>26</xmin>
+      <xmin>652</xmin>
       <ymin>130</ymin>
-      <xmax>222</xmax>
+      <xmax>848</xmax>
       <ymax>391</ymax>
     </bndbox>
   </object>
@@ -132,9 +84,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>50</xmin>
+      <xmin>704</xmin>
       <ymin>391</ymin>
-      <xmax>198</xmax>
+      <xmax>795</xmax>
       <ymax>440</ymax>
     </bndbox>
   </object>

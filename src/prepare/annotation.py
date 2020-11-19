@@ -7,6 +7,7 @@ def annotate_all(base_img_path):
     with open(os.path.join(decoded_base_path, "all_data.json"), "r", encoding="utf-8") as f:
         all_data = json.load(f)
         for file_name in os.listdir(base_img_path):
+            # if file_name == "000475.jpg":
             if file_name.endswith(".jpg"):
                 name = file_name[:len(file_name) - len(".jpg")]
                 decoded_data = all_data[name]

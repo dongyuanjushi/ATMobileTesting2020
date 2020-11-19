@@ -7,30 +7,6 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>130</ymin>
-      <xmax>918</xmax>
-      <ymax>1726</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>130</ymin>
-      <xmax>918</xmax>
-      <ymax>1726</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -52,30 +28,6 @@
       <ymin>340</ymin>
       <xmax>834</xmax>
       <ymax>410</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>246</xmin>
-      <ymin>452</ymin>
-      <xmax>834</xmax>
-      <ymax>1457</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>246</xmin>
-      <ymin>452</ymin>
-      <xmax>834</xmax>
-      <ymax>554</ymax>
     </bndbox>
   </object>
   <object>
@@ -103,27 +55,15 @@
     </bndbox>
   </object>
   <object>
-    <name>RadioButton</name>
+    <name>SpecialButton</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>651</xmin>
-      <ymin>467</ymin>
+      <xmin>592</xmin>
+      <ymin>983</ymin>
       <xmax>834</xmax>
-      <ymax>551</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>246</xmin>
-      <ymin>1457</ymin>
-      <xmax>834</xmax>
-      <ymax>1726</ymax>
+      <ymax>1067</ymax>
     </bndbox>
   </object>
   <object>

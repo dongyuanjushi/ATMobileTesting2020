@@ -7,30 +7,6 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>491</ymin>
-      <xmax>918</xmax>
-      <ymax>1366</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>162</xmin>
-      <ymin>491</ymin>
-      <xmax>918</xmax>
-      <ymax>1366</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
@@ -43,7 +19,7 @@
     </bndbox>
   </object>
   <object>
-    <name>Picker</name>
+    <name>Container</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -55,7 +31,7 @@
     </bndbox>
   </object>
   <object>
-    <name>EditText</name>
+    <name>TextView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
@@ -75,18 +51,6 @@
       <xmin>162</xmin>
       <ymin>1235</ymin>
       <xmax>537</xmax>
-      <ymax>1366</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Button</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>540</xmin>
-      <ymin>1235</ymin>
-      <xmax>918</xmax>
       <ymax>1366</ymax>
     </bndbox>
   </object>

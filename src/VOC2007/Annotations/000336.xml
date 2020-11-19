@@ -7,87 +7,15 @@
     <depth>3</depth>
   </size>
   <object>
-    <name>FrameLayout</name>
+    <name>ImageView</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>69</xmin>
       <ymin>323</ymin>
-      <xmax>1011</xmax>
-      <ymax>1533</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>323</ymin>
-      <xmax>1011</xmax>
-      <ymax>1533</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>323</ymin>
-      <xmax>1011</xmax>
-      <ymax>1533</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>323</ymin>
-      <xmax>1011</xmax>
-      <ymax>440</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>LinearLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>323</ymin>
-      <xmax>1011</xmax>
-      <ymax>440</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>FrameLayout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>440</ymin>
-      <xmax>1011</xmax>
-      <ymax>1386</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>View</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>440</ymin>
-      <xmax>1011</xmax>
-      <ymax>1386</ymax>
+      <xmax>69</xmax>
+      <ymax>323</ymax>
     </bndbox>
   </object>
   <object>
@@ -100,18 +28,6 @@
       <ymin>488</ymin>
       <xmax>1011</xmax>
       <ymax>1386</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>Layout</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>69</xmin>
-      <ymin>1386</ymin>
-      <xmax>1011</xmax>
-      <ymax>1533</ymax>
     </bndbox>
   </object>
   <object>
