@@ -14,6 +14,7 @@ def copy():
                 print("Unable to copy file. %s" % e)
                 exit(1)
 
+
 if __name__ == '__main__':
     img_base_data_path = "../../Data/data"
     copy_base_data_path = "../../Data/VOC2007/JPEGImages"
