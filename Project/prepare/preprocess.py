@@ -44,7 +44,8 @@ def check_duplicate(decoded_data, item):
             return inside
         outside = check_inside(item["bounds"], added_bounds)
         if outside:
-            if item["class"] != "False" and priority[item["class"]] >= priority[decoded_data[index]["class"]]:
+            if item["class"] != "False" :
+                #and priority[item["class"]] >= priority[decoded_data[index]["class"]]
                 removed_id.append(index)
             else:
                 return res
@@ -134,35 +135,35 @@ def get_distance(x1, y1, x2, y2):
 if __name__ == '__main__':
     all_decoded_data = {}
     classified = {}
-    base_path = "../data"
-    save_based_path = "../decoded_data"
-    priority = {
-        "TextView": 1,
-        "ImageView": 2,
-        "Button": 3,
-        "SpecialButton": 4,
-        "Bar": 5,
-        "Container": 6,
-    }
+    base_path = "../../Data/data"
+    save_based_path = "../../Data/decoded_data"
+    # priority = {
+    #     "TextView": 1,
+    #     "ImageView": 2,
+    #     "Button": 3,
+    #     "SpecialButton": 4,
+    #     "Bar": 5,
+    #     "Container": 6,
+    # }
     match_patterns = {
         r"^(.*)TextView$": "TextView",
-        r"^((?!(Text|Image|Card|Item)).)*View$": "False",
-        r"^((?!(Linear|Frame)).)*Layout$": "False",
+        r"^((?!(Text|Image|Card|Item)).)*View$": "View",
+        r"^((?!(Linear|Frame)).)*Layout$": "View",
         r"^(.*)LinearLayout$": "False",
         r"^(.*)FrameLayout$": "False",
         r"^(.*)(ImageView|imageview)$": "ImageView",
-        r"^(.*)ItemView$": "ImageView",
-        r"^(.*)CardView$": "ImageView",
+        r"^(.*)ItemView$": "ItemView",
+        r"^(.*)CardView$": "CardView",
         r"^(.*)[B,b]{1}ar$": "Bar",
         r"^((?!(Image|Radio)).)*Button$": "Button",
-        r"^(.*)ImageButton$": "SpecialButton",
-        r"^(.*)RadioButton$": "SpecialButton",
-        r"^(.*)Spinner$": "Container",
-        r"^(.*)Switcher$": "Container",
-        r"^(.*)Indicator$": "Container",
-        r"^(.*)Pager$": "Container",
-        r"^(.*)Picker$": "Container",
-        r"^(.*)EditText$": "TextView",
+        r"^(.*)ImageButton$": "ImageButton",
+        r"^(.*)RadioButton$": "RadioButton",
+        r"^(.*)Spinner$": "Spinner",
+        r"^(.*)Switcher$": "Switcher",
+        r"^(.*)Indicator$": "Indicator",
+        r"^(.*)Pager$": "Pager",
+        r"^(.*)Picker$": "Picker",
+        r"^(.*)EditText$": "EditText",
         r"^[a-z]{1,}": "False",
         r"X\.[0-9]*": "False",
         "DragandDrop.PagedDragDropGrid": "False",

@@ -30,7 +30,7 @@ def annotate_img(img_path, name, decoded_data):
 
 
 if __name__ == '__main__':
-    base_img_path = "../data"
-    decoded_base_path = "../decoded_data"
-    annotated_base_img_path = "../annotated_image"
+    base_img_path = "../../Data/data"
+    decoded_base_path = "../../Data/decoded_data"
+    annotated_base_img_path = "../../Data/annotated_image"
     annotate_all(base_img_path)

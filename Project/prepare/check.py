@@ -12,5 +12,5 @@ def check(base_path):
 
 
 if __name__ == '__main__':
-    base_path = "../data"
+    base_path = "../../Data/data"
     check(base_path)

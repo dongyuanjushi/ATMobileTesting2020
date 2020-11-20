@@ -28,6 +28,6 @@ def select():
 
 
 if __name__ == '__main__':
-    ori_path = "../data"
-    selected_path = "../data"
+    ori_path = "../../Data/data"
+    selected_path = "../../Data/data"
     select()

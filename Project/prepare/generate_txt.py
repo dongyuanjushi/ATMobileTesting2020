@@ -4,8 +4,8 @@ import random
 if __name__ == '__main__':
     trainval_percent = 0.8
     train_percent = 0.6
-    xmlfilepath = '../VOC2007/Annotations'
-    txtsavepath = '../VOC2007/ImageSets/Main'
+    xmlfilepath = '../../Data/VOC2007/Annotations'
+    txtsavepath = '../../Data/VOC2007/ImageSets/Main'
     total_xml = os.listdir(xmlfilepath)
 
     num = len(total_xml)

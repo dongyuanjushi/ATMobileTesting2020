@@ -10,7 +10,7 @@ def classify():
                     classified.setdefault(widget["class"], 1)
                 else:
                     classified[widget["class"]] += 1
-    with open("classified.txt", "w") as w:
+    with open('../../Data/'+"classified.txt", "w") as w:
         lines = ""
         for item in classified:
             lines += (item + ":" + str(classified[item]) + "\n")
@@ -18,6 +18,6 @@ def classify():
 
 
 if __name__ == '__main__':
-    all_data_path = "../decoded_data/all_data.json"
+    all_data_path = "../../Data/decoded_data/all_data.json"
     classified = {}
     classify()
