@@ -18,7 +18,7 @@ Project下分为prepare(数据标注预处理)和model(模型相关的配置和�
 
 yolov4的具体结构如图
 
-![](.\yolov4模型结构.jpg)
+![](https://github.com/dongyuanjushi/ATMobileTesting2020/blob/master/Report/yolov4%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84.jpg)
 
 ### 运行步骤
 

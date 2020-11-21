@@ -14,10 +14,10 @@ def save_and_classify():
     for file in all_decoded_data:
         line += ("Name:" + file + ".jpg\n")
         data = all_decoded_data[file]
-        line += ("控件数量:" + str(len(data)) + "\n")
+        line += ("Widget Number:" + str(len(data)) + "\n")
         for widget in data:
-            line+=("类型:"+data[widget]["class"]+"\n")
-            line+=("位置:"+str(data[widget]["bounds"])+"\n")
+            line+=("Type:"+data[widget]["class"]+"\n")
+            line+=("Position:"+str(data[widget]["bounds"])+"\n")
         line+="\n"
     txt.write(line)
     txt.close()
