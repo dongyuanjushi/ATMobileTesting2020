@@ -1,0 +1,2 @@
+Demo/Demo.wmv filter=lfs diff=lfs merge=lfs -text
+Project/model/configuration.zip filter=lfs diff=lfs merge=lfs -text

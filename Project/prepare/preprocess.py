@@ -3,7 +3,7 @@ import math
 import os
 import re
 
-
+# 保存并对不同文件的控件进行分类
 def save_and_classify():
     all_path = os.path.join(save_based_path, "all_data.json")
     with open(all_path, "w",encoding="utf-8") as w:
@@ -22,7 +22,7 @@ def save_and_classify():
     txt.write(line)
     txt.close()
 
-
+# 对所有的json进行解析
 def decode_all(base_path):
     for file_name in os.listdir(base_path):
         # if file_name == "000475.json":
@@ -34,7 +34,7 @@ def decode_all(base_path):
                 decode(data["children"], decoded_data)
             all_decoded_data.setdefault(file_name[:len(file_name) - len(".json")], decoded_data)
 
-
+# 检查b_box的冗余情况
 def check_duplicate(decoded_data, item):
     res = False
     removed_id = []
@@ -57,7 +57,7 @@ def check_duplicate(decoded_data, item):
         decoded_data.pop(i)
     return res
 
-
+# 检查是否存在相互包含且距离较近的b_box
 def check_inside(add_bounds, current_bounds):
     inside = True
     for i in range(4):
@@ -66,7 +66,7 @@ def check_inside(add_bounds, current_bounds):
             break
     return inside
 
-
+# 对单个json进行解析
 def decode(data, decoded_data):
     for item in data:
         nobounds = False
@@ -93,7 +93,7 @@ def decode(data, decoded_data):
         if "children" in item.keys():
             decode(item["children"], decoded_data)
 
-
+# 对控件类别进行合并
 def combine_class(current):
     res = None
     for item in match_patterns:
@@ -103,7 +103,7 @@ def combine_class(current):
             break
     current["class"] = res
 
-
+# 对b_box进行缩放
 def resize(bounding_box):
     height, width = 1920, 1080
     ori_height, ori_width = 2560, 1440
@@ -116,7 +116,7 @@ def resize(bounding_box):
             bounding_box[i] = bounding_box[i] - 5 if bounding_box[i] == 1920 else bounding_box[i]
         bounding_box[i] = 5 if bounding_box[i] <= 0 else bounding_box[i]
 
-
+# 检查b_box之间的距离
 def check_dis(added_bounds, current_bounds):
     [l1, u1, r1, d1] = added_bounds
     [l2, u2, r2, d2] = current_bounds
@@ -164,6 +164,6 @@ if __name__ == '__main__':
         r"X\.[0-9]*": "False",
         "DragandDrop.PagedDragDropGrid": "False",
         "DragandDrop.DragDropGrid": "False"
-    }
+    } # 用于正则表达式匹配类型
     decode_all(base_path)
     save_and_classify()
