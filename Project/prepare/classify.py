@@ -18,6 +18,6 @@ def classify():
 
 
 if __name__ == '__main__':
-    all_data_path = "../../Data/decoded_data/all_data.json"
+    all_data_path = "../../Data/all_data.json"
     classified = {}
     classify()

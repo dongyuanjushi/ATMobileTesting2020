@@ -6,7 +6,7 @@ import re
 
 def save_and_classify():
     all_path = os.path.join(save_based_path, "all_data.json")
-    with open(all_path, "w") as w:
+    with open(all_path, "w",encoding="utf-8") as w:
         json.dump(all_decoded_data, w)
     all_txt_path = os.path.join(save_based_path, "all_data.txt")
     txt = open(all_txt_path, "w")
@@ -14,7 +14,11 @@ def save_and_classify():
     for file in all_decoded_data:
         line += ("Name:" + file + ".jpg\n")
         data = all_decoded_data[file]
-        line += ("Bbox数量:" + str(len(data)) + "\n\n")
+        line += ("控件数量:" + str(len(data)) + "\n")
+        for widget in data:
+            line+=("类型:"+data[widget]["class"]+"\n")
+            line+=("位置:"+str(data[widget]["bounds"])+"\n")
+        line+="\n"
     txt.write(line)
     txt.close()
 
@@ -136,15 +140,7 @@ if __name__ == '__main__':
     all_decoded_data = {}
     classified = {}
     base_path = "../../Data/data"
-    save_based_path = "../../Data/decoded_data"
-    # priority = {
-    #     "TextView": 1,
-    #     "ImageView": 2,
-    #     "Button": 3,
-    #     "SpecialButton": 4,
-    #     "Bar": 5,
-    #     "Container": 6,
-    # }
+    save_based_path = "../../Data"
     match_patterns = {
         r"^(.*)TextView$": "TextView",
         r"^((?!(Text|Image|Card|Item)).)*View$": "View",

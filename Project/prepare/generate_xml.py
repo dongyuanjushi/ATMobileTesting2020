@@ -46,7 +46,7 @@ class GEN_Annotations:
 
 
 if __name__ == '__main__':
-    decoded_data_path = "../../Data/decoded_data/all_data.json"
+    decoded_data_path = "../../Data/all_data.json"
     saved_xml_base_path = "../../Data/VOC2007/Annotations"
     with open(decoded_data_path, "r", encoding="utf-8") as f:
         all_data = json.load(f)

@@ -31,7 +31,7 @@ def annotate_img(img_path, name, decoded_data):
 
 if __name__ == '__main__':
     base_img_path = "../../Data/data"
-    decoded_base_path = "../../Data/decoded_data"
+    decoded_base_path = "../../Data"
     annotated_base_img_path = "../../Data/annotated_image"
     if not os.path.exists(annotated_base_img_path):
         os.mkdir(annotated_base_img_path)
