@@ -33,4 +33,6 @@ if __name__ == '__main__':
     base_img_path = "../../Data/data"
     decoded_base_path = "../../Data/decoded_data"
     annotated_base_img_path = "../../Data/annotated_image"
+    if not os.path.exists(annotated_base_img_path):
+        os.mkdir(annotated_base_img_path)
     annotate_all(base_img_path)
