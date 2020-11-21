@@ -1,6 +1,0 @@
-ImageView:1942
-Bar:574
-TextView:2919
-Container:281
-Button:738
-SpecialButton:399

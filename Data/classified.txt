@@ -1,0 +1,15 @@
+View:3295
+ImageView:1385
+TextView:2549
+ImageButton:299
+Spinner:35
+Bar:280
+CardView:83
+Button:616
+ItemView:103
+Indicator:24
+Pager:63
+Switcher:8
+EditText:107
+RadioButton:57
+Picker:14
