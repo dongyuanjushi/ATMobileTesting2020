@@ -31,25 +31,25 @@ Project:
 
 ​	prepare(数据标注部分)：
 
-​		preprocess.py 预处理
+​	1. preprocess.py 预处理
 
-​		annotation.py 可视化标注
+​	2. annotation.py 可视化标注
 
-​		classify.py 对控件类型分类并统计
+​	3. classify.py 对控件类型分类并统计
 
-​		check.py 将部分不是1080x1920的图片重新resize
+​	4. check.py 将部分不是1080x1920的图片重新resize
 
-​		format.py 将图片格式化为000001.jpg,000002.jpg的格式(用于构建		VOC2007数据集)
+​	5. format.py 将图片格式化为000001.jpg,000002.jpg的格式(用于构建		VOC2007数据集)
 
-​		copy_image.py 复制图片到VOC2007/JPEGImage下
+​	6. copy_image.py 复制图片到VOC2007/JPEGImage下
 
-​		generate_xml 生成VOC2007/Annotations的xml文件
+​	7. generate_xml 生成VOC2007/Annotations的xml文件
 
-​		generate_txt 生成VOC2007/ImageSet下的相关txt文件
+​	8. generate_txt 生成VOC2007/ImageSet下的相关txt文件
 
 ​	model(控件识别部分)
 
-​		results：控件识别结果(使用uied工具)
+​	1. results：控件识别结果(使用uied工具)
 
-​		configuration.zip 包含了模型训练权重和关键的配置文件
+​	2. configuration.zip 包含了模型训练权重和关键的配置文件
 
