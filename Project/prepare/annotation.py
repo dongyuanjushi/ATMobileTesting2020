@@ -3,6 +3,7 @@ import json
 import os
 
 
+# 标注多个图片
 def annotate_all(base_img_path):
     with open(os.path.join(decoded_base_path, "all_data.json"), "r", encoding="utf-8") as f:
         all_data = json.load(f)
@@ -15,6 +16,7 @@ def annotate_all(base_img_path):
                 annotate_img(img_path, name, decoded_data)
 
 
+# 标注单个图片
 def annotate_img(img_path, name, decoded_data):
     img = cv2.imread(img_path)
     for index in decoded_data:

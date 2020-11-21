@@ -2,7 +2,7 @@ import os
 import json
 from lxml import etree
 
-
+# 生成VOC2007的xml
 class GEN_Annotations:
     def __init__(self, filename):
         self.root = etree.Element("annotation")

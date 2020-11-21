@@ -1,6 +1,6 @@
 import json
 
-
+# 对控件类型分类并统计
 def classify():
     with open(all_data_path, "r", encoding="utf-8") as f:
         all_data = json.load(f)

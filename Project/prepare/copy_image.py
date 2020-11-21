@@ -3,6 +3,7 @@ import shutil
 import os
 
 
+# 将图片批量复制到VOC2007下构建
 def copy():
     for file in os.listdir(img_base_data_path):
         if file.endswith(".jpg"):

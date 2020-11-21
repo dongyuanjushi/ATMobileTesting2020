@@ -1,7 +1,7 @@
 import os
 from shutil import copyfile
 
-
+# 将标注情况较差的数据从数据集中剔除
 def select():
     print(ori_path + "/selected.txt")
     file = open(ori_path + "/selected.txt","r")

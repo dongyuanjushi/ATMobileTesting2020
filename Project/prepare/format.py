@@ -1,6 +1,6 @@
 import os
 
-
+# 图片批量格式化
 def rename(img_path):
     image_idx = 1
     json_idx = 1
